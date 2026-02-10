@@ -16,6 +16,7 @@
             background: #141414;
             color: white;
             overflow-x: hidden;
+            overflow-y: auto;
         }
 
         /* Survey Form Screen */
@@ -28,9 +29,11 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             z-index: 10000;
             animation: fadeIn 0.5s ease;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
         }
 
         .survey-screen.hidden {
@@ -46,6 +49,7 @@
             max-width: 700px;
             width: 90%;
             box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+            margin: 30px auto;
         }
 
         .survey-title {
@@ -177,6 +181,8 @@
             display: none;
             opacity: 0;
             animation: fadeIn 1s ease forwards;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
         }
 
         .main-content.active {
